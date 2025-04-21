@@ -381,9 +381,11 @@ footer::before{
 /* Make the navbar fixed at the top */
 .home_navbar {
     position: fixed;
-    top: 0;
+    top: -20px;
+    left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 999;
+    background-color: transparent;
     transition: background-color 0.3s ease;
   }
   
