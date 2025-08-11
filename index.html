@@ -1,326 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <title>Cafe - Responsive</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
-
 <body>
 
-    <div class="home" id="home">
-        <div class="home_navbar">
-            <div class="logo">
-                <img src="Images/logo.png" alt="...">
-            </div>
-            <div class="navbar">
-                <ul class="navlist">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#coffee">Coffee</a></li>
-                    <li><a href="#review">Review</a></li>
-                    <li><a href="#blogs">Blog</a></li>
-                </ul>
-            </div>
-        </div>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                <img src="Images/logo.png" alt="Cafe Logo">
+            </a>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
 
-        <div class="home_main">
-            <div class="home_sub">
-                <div class="line1">
-                    <h4>NOW YOU CAN FEEL ENERGY</h4>
-                </div>
-                <br>
-                <div class="line2">
-                    <h1>Start Your day with <br>a black Coffee</h1>
-                </div>
-                <br>
-                <div class="home_button">
-                    <button>Buy Now</button>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h4>NOW YOU CAN FEEL THE ENERGY</h4>
+                    <h1>Start your day with<br>a black coffee</h1>
+                    <button class="hero-btn">Buy Now</button>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container about-container">
+                <div class="about-video">
+                    <img src="Images/video-bg.jpg" alt="Coffee making process">
+                    <img src="Images/play-icon.png" alt="Play Icon" class="play-icon">
+                </div>
+                <div class="about-content">
+                    <p class="subtitle">LIVE COFFEE MAKING PROCESS</p>
+                    <h2>We telecast our coffee making live</h2>
+                    <h5>We are here to listen from you and deliver excellence.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore aliquid vero voluptas quo cum quaerat magni iure placeat nisi quae praesentium reiciendis.</p>
+                    <img src="Images/signature.png" alt="Signature" class="signature">
+                </div>
+            </div>
+        </section>
 
-    <div class="about" id="about">
-        <div class="about_video">
-            <img src="Images/video-bg.jpg" alt="..." class="about_main_video">
-            <a href="#video_link"><img src="Images/play-icon.png" alt="" class="play_button"></a>
-        </div>
-        <div class="about_content">
-            <p class="p1">LIVE COFFEE MAKING PROCESS</p>
-            <h2>We Telecast our <br> Coffee Making Live</h2>
-            <h5>We are here to listen from you deliver exellence</h5>
-            <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid vero voluptas quo cum
-                quaerat magni iure placeat nisi quae praesentium reiciendis, dolor, eum nam? Iste in nobis sunt dolorum.
-            </p>
-            <br>
-            <img src="Images/signature.png" alt="Signature">
-        </div>
-    </div>
-
-    <div class="coffee" id="coffee">
-        <div class="types_header">
-            <div class="main">
-                <h1>Our Speciality</h1>
-            </div>
-            <div class="sub">
-                <p>Who are love with eco friendly system</p>
-            </div>
-        </div>
-        <br>
-        <div class="types">
-            <div class="card" style="width: 18rem;">
-                <img src="https://th.bing.com/th/id/R.91b8d00ad03f6adef6cf7125740d5499?rik=VCTh8vTO5EY5RQ&riu=http%3a%2f%2fwww.ffactor.com%2fwp-content%2fuploads%2f2018%2f08%2fAdobeStock_202756131.jpeg&ehk=psyxmQ%2fogP7kPf5r0bj7wwbaDI4aAwg2yCTM6AMuUuI%3d&risl=1&pid=ImgRaw&r=0"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><b style="z-index: 10 !important;">Cappuccino</b></h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn"><b>$49</b></a>
+        <!-- Menu Section -->
+        <section class="menu" id="menu">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Speciality</h2>
+                    <p>For those who love an eco-friendly system and delicious coffee.</p>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="https://www.roastmarket.de/magazin/wp-content/uploads/2016/05/Caffe-Americano-in-Tasse.jpg"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Americano</b></h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn"><b>$49</b></a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="https://th.bing.com/th/id/R.70b814c4d17c7a58f36ba1f51aa35895?rik=II4F%2fZnwlUdVtA&riu=http%3a%2f%2fwww.2cupsofjoe.com%2fwp-content%2fuploads%2f2015%2f01%2fEspresso_La_Cimbali_1.jpg&ehk=qGbS3IuPta%2bE2n6YxcjtG8pi3XzPfi8d0CAehobZ3gA%3d&risl=1&pid=ImgRaw&r=0"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Espresso</b></h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn"><b>$49</b></a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="https://th.bing.com/th/id/OIP.LlXkNk9LsT5XrrwZ1ESeVQHaEJ?rs=1&pid=ImgDetMain"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Macchiato</b></h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn"><b>$49</b></a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="https://cdn.shopify.com/s/files/1/1221/3516/articles/latte-art-on-mocha.jpg?v=1660069726"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Mocha</b></h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn"><b>$49</b></a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="https://th.bing.com/th/id/OIP.Zbj1SemTGhMY8oSoxl55mAHaE8?rs=1&pid=ImgDetMain"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Coffee Latte</b></h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn"><b>$49</b></a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="https://th.bing.com/th/id/R.e7c4c291aa49d87e81117b5580dad9c9?rik=pzhawHNy61e0kg&riu=http%3a%2f%2fwhitehorsecoffee.com.au%2fcdn%2fshop%2farticles%2f9B605647-F527-4816-A532-8449B8DB39FF.jpg%3fv%3d1680243604&ehk=iGuGsnBZ926gFWO7BWeyLmvvaq57ddOKfFZQPyoiX%2bI%3d&risl=&pid=ImgRaw&r=0"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Piccolo Latte</b></h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn"><b>$49</b></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br><br><br>
-
-    <section class="portraits">
-        <div class="header">
-            <div class="header_main">
-                <h1>What Kind of coffee we serve for you</h1>
-            </div>
-            <div class="header_sub">
-                <p>We are love with eco friendly system</p>
-            </div>
-        </div>
-
-        <div class="photo">
-            <div class="photo_1">
-                <div>
-                    <img class="portraits_img" src="Images/g1.jpg" alt="..">
-                </div>
-                <div>
-                    <img class="portraits_img" src="Images/g2.jpg" alt="">
-                </div>
-            </div>
-            <div class="photo_2">
-                <div>
-                    <img class="portraits_img" src="Images/g3.jpg" alt="">
-                </div>
-                <div class="photo_2_sub">
-                    <div>
-                        <img class="portraits_img" src="Images/g4.jpg" alt="">
+                <div class="menu-grid">
+                    <!-- Menu Item 1 -->
+                    <div class="menu-card">
+                        <img src="https://th.bing.com/th/id/R.91b8d00ad03f6adef6cf7125740d5499?rik=VCTh8vTO5EY5RQ&riu=http%3a%2f%2fwww.ffactor.com%2fwp-content%2fuploads%2f2018%2f08%2fAdobeStock_202756131.jpeg&ehk=psyxmQ%2fogP7kPf5r0bj7wwbaDI4aAwg2yCTM6AMuUuI%3d&risl=1&pid=ImgRaw&r=0" alt="Cappuccino">
+                        <div class="menu-card-content">
+                            <h3>Cappuccino</h3>
+                            <span class="price">$49</span>
+                        </div>
                     </div>
-                    <div>
-                        <img class="portraits_img" src="Images/g5.jpg" alt="">
+                    <!-- Menu Item 2 -->
+                    <div class="menu-card">
+                        <img src="https://www.roastmarket.de/magazin/wp-content/uploads/2016/05/Caffe-Americano-in-Tasse.jpg" alt="Americano">
+                        <div class="menu-card-content">
+                            <h3>Americano</h3>
+                            <span class="price">$49</span>
+                        </div>
+                    </div>
+                    <!-- Menu Item 3 -->
+                    <div class="menu-card">
+                        <img src="https://th.bing.com/th/id/R.70b814c4d17c7a58f36ba1f51aa35895?rik=II4F%2fZnwlUdVtA&riu=http%3a%2f%2fwww.2cupsofjoe.com%2fwp-content%2fuploads%2f2015%2f01%2fEspresso_La_Cimbali_1.jpg&ehk=qGbS3IuPta%2bE2n6YxcjtG8pi3XzPfi8d0CAehobZ3gA%3d&risl=1&pid=ImgRaw&r=0" alt="Espresso">
+                        <div class="menu-card-content">
+                            <h3>Espresso</h3>
+                            <span class="price">$49</span>
+                        </div>
+                    </div>
+                    <!-- Menu Item 4 -->
+                    <div class="menu-card">
+                        <img src="https://th.bing.com/th/id/OIP.LlXkNk9LsT5XrrwZ1ESeVQHaEJ?rs=1&pid=ImgDetMain" alt="Macchiato">
+                        <div class="menu-card-content">
+                            <h3>Macchiato</h3>
+                            <span class="price">$49</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://cdn.shopify.com/s/files/1/1221/3516/articles/latte-art-on-mocha.jpg?v=1660069726" alt="Macchiato">
+                        <div class="menu-card-content">
+                            <h3>Mocha</h3>
+                            <span class="price">$49</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://th.bing.com/th/id/OIP.Zbj1SemTGhMY8oSoxl55mAHaE8?rs=1&pid=ImgDetMain" alt="Macchiato">
+                        <div class="menu-card-content">
+                            <h3>Coffee Latte</h3>
+                            <span class="price">$49</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://th.bing.com/th/id/R.e7c4c291aa49d87e81117b5580dad9c9?rik=pzhawHNy61e0kg&riu=http%3a%2f%2fwhitehorsecoffee.com.au%2fcdn%2fshop%2farticles%2f9B605647-F527-4816-A532-8449B8DB39FF.jpg%3fv%3d1680243604&ehk=iGuGsnBZ926gFWO7BWeyLmvvaq57ddOKfFZQPyoiX%2bI%3d&risl=&pid=ImgRaw&r=0" alt="Macchiato">
+                        <div class="menu-card-content">
+                            <h3>Piccolo Latte</h3>
+                            <span class="price">$49</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://th.bing.com/th/id/R.91b8d00ad03f6adef6cf7125740d5499?rik=VCTh8vTO5EY5RQ&riu=http%3a%2f%2fwww.ffactor.com%2fwp-content%2fuploads%2f2018%2f08%2fAdobeStock_202756131.jpeg&ehk=psyxmQ%2fogP7kPf5r0bj7wwbaDI4aAwg2yCTM6AMuUuI%3d&risl=1&pid=ImgRaw&r=0" alt="Cappuccino">
+                        <div class="menu-card-content">
+                            <h3>Cappuccino</h3>
+                            <span class="price">$49</span>
+                        </div>
+                    </div>
+                    <!-- Menu Item 2 -->
+                    <div class="menu-card">
+                        <img src="https://www.roastmarket.de/magazin/wp-content/uploads/2016/05/Caffe-Americano-in-Tasse.jpg" alt="Americano">
+                        <div class="menu-card-content">
+                            <h3>Americano</h3>
+                            <span class="price">$49</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <br><br>
+        </section>
 
-    <section class="review" id="review">
-        <br><br><br>
-        <div class="header">
-            <div class="header_main">
-                <h1>What Kind of coffee we serve for you</h1>
-            </div>
-            <div class="header_sub">
-                <p>We are love with eco friendly system</p>
-            </div>
-        </div>
-        <br>
-        <div class="review_section">
-            <div class="r">
-                <div>
-                    <img src="Images/r1.png" alt="">
+        <!-- Gallery Section -->
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Gallery</h2>
+                    <p>A glimpse into our world of coffee and comfort.</p>
                 </div>
-                <div>
-                    <div>
-                        <h3>Lorem ipsum</h3>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, blanditiis! Laborum numquam
-                            voluptatum est minus sunt quia quo tempora adipisci, consequatur magnam aspernatur omnis
-                            sint rerum laboriosam culpa architecto doloremque.</p>
-                    </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item gallery-item-1"><img src="Images/g1.jpg" alt="Gallery Image 1"></div>
+                    <div class="gallery-item gallery-item-2"><img src="Images/g2.jpg" alt="Gallery Image 2"></div>
+                    <div class="gallery-item gallery-item-3"><img src="Images/g3.jpg" alt="Gallery Image 3"></div>
+                    <div class="gallery-item gallery-item-4"><img src="Images/g4.jpg" alt="Gallery Image 4"></div>
+                    <div class="gallery-item gallery-item-5"><img src="Images/g5.jpg" alt="Gallery Image 5"></div>
                 </div>
             </div>
-            <div class="r">
-                <div>
-                    <img src="Images/r2.png" alt="">
-                </div>
-                <div>
-                    <div>
-                        <h3>Lorem ipsum</h3>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, blanditiis! Laborum numquam
-                            voluptatum est minus sunt quia quo tempora adipisci, consequatur magnam aspernatur omnis
-                            sint rerum laboriosam culpa architecto doloremque.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br><br><br>
-    </section>
+        </section>
 
-    <section class="blog" id="blogs">
-        <br><br><br>
-        <div class="header">
-            <div class="header_main">
-                <h1>What Kind of coffee we serve for you</h1>
-            </div>
-            <div class="header_sub">
-                <p>We are love with eco friendly system</p>
-            </div>
-        </div>
-
-        <div class="blog_content">
-            <div class="b">
-                <img src="Images/b1.jpg" alt="">
-                <div>
-                    <button class="b_btn">Travel</button>
-                    <button class="b_btn">Life Style</button>
+        <!-- Review Section -->
+        <section class="review" id="review">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Customers Say</h2>
+                    <p>Honest reviews from our beloved coffee enthusiasts.</p>
                 </div>
-                <h3><b>
-                        Portable latest Fashion for young women</b>
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quod quo excepturi eius vitae.
-                    Neque aperiam veritatis, est ut ratione dolor, iure nulla, laboriosam placeat qui deserunt
-                    voluptatum inventore laborum?</p>
-                <b>31<sup>st</sup> January, 2018</b>
-            </div>
-            <div class="b">
-                <img src="Images/b2.jpg" alt="">
-                <div>
-                    <button class="b_btn">Travel</button>
-                    <button class="b_btn">Life Style</button>
+                <div class="review-grid">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <img src="Images/r1.png" alt="Reviewer 1">
+                        <div class="review-content">
+                            <h3>Livia Styles</h3>
+                            <p>"The best coffee I've ever had! The ambiance is perfect for relaxing or getting work done. Highly recommend the Espresso."</p>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <img src="Images/r2.png" alt="Reviewer 2">
+                        <div class="review-content">
+                            <h3>Mark Johnson</h3>
+                            <p>"A true gem. The staff is incredibly friendly, and you can tell they are passionate about their coffee. The live making process is a nice touch!"</p>
+                        </div>
+                    </div>
                 </div>
-                <h3><b>
-                        Portable latest Fashion for young women</b>
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quod quo excepturi eius vitae.
-                    Neque aperiam veritatis, est ut ratione dolor, iure nulla, laboriosam placeat qui deserunt
-                    voluptatum inventore laborum?</p>
-                <b>31<sup>st</sup> January, 2018</b>
             </div>
-        </div>
-    </section>
-    <br><br><br>
+        </section>
 
-    <footer>
-        <br><br><br><br><br><br><br><br><br>
-        <div class="footer">
-            <div class="f1">
+        <!-- Blog Section -->
+        <section class="blog" id="blog">
+            <div class="container">
+                <div class="section-header">
+                    <h2>From Our Blog</h2>
+                    <p>The latest news, stories, and tips from our team.</p>
+                </div>
+                <div class="blog-grid">
+                    <!-- Blog Post 1 -->
+                    <div class="blog-card">
+                        <img src="Images/b1.jpg" alt="Blog Post 1">
+                        <div class="tags">
+                            <button class="tag-btn">Travel</button>
+                            <button class="tag-btn">Lifestyle</button>
+                        </div>
+                        <h3>Portable Fashion for Young Women</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quod quo excepturi eius vitae.</p>
+                        <span class="date">31st January, 2025</span>
+                    </div>
+                    <!-- Blog Post 2 -->
+                    <div class="blog-card">
+                        <img src="Images/b2.jpg" alt="Blog Post 2">
+                        <div class="tags">
+                            <button class="tag-btn">Coffee</button>
+                            <button class="tag-btn">Tips</button>
+                        </div>
+                        <h3>The Secrets to a Perfect Home Brew</h3>
+                        <p>Neque aperiam veritatis, est ut ratione dolor, iure nulla, laboriosam placeat qui deserunt.</p>
+                        <span class="date">28th January, 2025</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
                 <h3>About Us</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam necessitatibus, facere pariatur dolores
-                    libero sapiente amet incidunt non porro illo tenetur odit exercitationem recusandae iusto. Facilis
-                    ut suscipit ipsam consequuntur!</p>
-                <p class="footer-text">
-                    
-                    Copyright ©
-                    <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-                    is made with <i class="fa-solid fa-heart" aria-hidden="true"></i> by <a href="#"
-                        target="_blank" class="designer">Vishal Daware</a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam necessitatibus, facere pariatur dolores libero sapiente amet incidunt non porro illo.</p>
+                <p class="copyright">
+                    Copyright &copy; <span id="year"></span> All rights reserved | This template is made with <i class="fas fa-heart"></i> by <a href="#" class="designer">Vishal Daware</a>
                 </p>
             </div>
-            <div class="f2">
+            <div class="footer-newsletter">
                 <h3>Newsletter</h3>
-                <p>stay update with out latest</p>
-                <input type="email" placeholder="Enter your email" class="email">
-                <button >Send</button>
+                <p>Stay updated with our latest offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter Email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
             </div>
-            <div class="f3">
+            <div class="footer-social">
                 <h3>Follow Us</h3>
-                <p>let us be social</p>
-                <div class="icon">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-square-behance"></i>
+                <p>Let's be social.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
                 </div>
             </div>
         </div>
-        <br><br><br><br><br>
     </footer>
 
-</body>
+    <script>
+       
+    </script>
 
+</body>
 </html>
